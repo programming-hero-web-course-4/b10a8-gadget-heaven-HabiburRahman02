@@ -1,0 +1,22 @@
+[
+    {
+        "id": 101,
+        "name": "Phones"
+    },
+    {
+        "id": 102,
+        "name": "Laptops"
+    },
+    {
+        "id": 103,
+        "name": "Tablets"
+    },
+    {
+        "id": 104,
+        "name": "Watches"
+    },
+    {
+        "id": 105,
+        "name": "Headphones"
+    }
+]

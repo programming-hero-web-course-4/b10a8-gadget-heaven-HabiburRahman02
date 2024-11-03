@@ -2,7 +2,7 @@
 const Footer = () => {
     return (
         <div className=" ">
-            <div className="mt-[320px] bg-white text-black py-24">
+            <div className=" bg-white text-black py-24">
                 <div className="">
                     <div className="max-w-[1450px] mx-auto text-center">
                         <div className="space-y-4">
