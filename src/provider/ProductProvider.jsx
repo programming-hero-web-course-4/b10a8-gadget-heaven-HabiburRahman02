@@ -3,7 +3,14 @@ import { createContext, useEffect, useState } from "react";
 
 export const ProductContext = createContext(null)
 const ProductProvider = ({ children }) => {
+    const [categories, setCategories] = useState([]);
     const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        fetch('/categories.json')
+            .then(res => res.json())
+            .then(data => setCategories(data))
+    }, [])
 
     useEffect(() => {
         fetch('/products.json')
@@ -13,7 +20,9 @@ const ProductProvider = ({ children }) => {
 
 
     const productInfo = {
-        products
+        categories,
+        products,
+        setProducts
     }
 
     return (

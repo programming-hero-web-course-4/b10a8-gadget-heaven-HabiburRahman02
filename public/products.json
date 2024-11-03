@@ -1,6 +1,6 @@
 [
     {
-        "id": 1001,
+        "id": 101,
         "product_title": "Smartwatch Series 6",
         "image": "https://i.ibb.co.com/4RNn0rH/watch-2.jpg",
         "category": "Watches",
@@ -16,7 +16,7 @@
         "rating": 4.6
     },
     {
-        "id": 1002,
+        "id": 102,
         "product_title": "Fitness Tracker Watch",
         "image": "https://i.ibb.co.com/ynqYH6B/watch-1.jpg",
         "category": "Watches",
@@ -32,7 +32,7 @@
         "rating": 4.4
     },
     {
-        "id": 1003,
+        "id": 103,
         "product_title": "Samsung Galaxy Tab S8",
         "image": "https://i.ibb.co.com/JtqSLBs/tablet-2.jpg",
         "category": "Tablets",
@@ -48,7 +48,7 @@
         "rating": 4.7
     },
     {
-        "id": 1004,
+        "id": 104,
         "product_title": "Apple iPad Air",
         "image": "https://i.ibb.co.com/wJTjphX/tablet-1.jpg",
         "category": "Tablets",
@@ -64,7 +64,7 @@
         "rating": 4.8
     },
     {
-        "id": 1005,
+        "id": 105,
         "product_title": "Dell XPS 13",
         "image": "https://i.ibb.co.com/hdqv3PK/laptop-3.jpg",
         "category": "Laptops",
@@ -80,7 +80,7 @@
         "rating": 4.9
     },
     {
-        "id": 1006,
+        "id": 106,
         "product_title": "HP Spectre x360",
         "image": "https://i.ibb.co.com/4mPHgjm/laptop-2.jpg",
         "category": "Laptops",
@@ -96,7 +96,7 @@
         "rating": 4.8
     },
     {
-        "id": 1007,
+        "id": 107,
         "product_title": "Lenovo ThinkPad X1 Carbon",
         "image": "https://i.ibb.co.com/nr4fHLf/laptop-1.webp",
         "category": "Laptops",
@@ -112,7 +112,7 @@
         "rating": 4.7
     },
     {
-        "id": 1008,
+        "id": 108,
         "product_title": "iPhone 13",
         "image": "https://i.ibb.co.com/3ypGJXp/phone-3.jpg",
         "category": "Phones",
@@ -128,7 +128,7 @@
         "rating": 4.6
     },
     {
-        "id": 1009,
+        "id": 109,
         "product_title": "Samsung Galaxy S21",
         "image": "https://i.ibb.co.com/16f9jSp/phone-2.jpg",
         "category": "Phones",
@@ -144,7 +144,7 @@
         "rating": 4.5
     },
     {
-        "id": 1010,
+        "id": 110,
         "product_title": "Google Pixel 6",
         "image": "https://i.ibb.co.com/yY6byfB/phone-1.jpg",
         "category": "Phones",

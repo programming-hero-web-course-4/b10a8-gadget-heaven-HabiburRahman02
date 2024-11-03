@@ -4,6 +4,7 @@ import ErrorPage from "../components/ErrorPage/ErrorPage";
 import Home from "../pages/Home/Home/Home";
 import Statistics from "../pages/Statistics/Statistics";
 import Dashboard from "../pages/Dashboard/Dashboard";
+import AllProducts from "../pages/Home/AllProducts/AllProducts";
 
 const router = createBrowserRouter([
     {
@@ -13,7 +14,14 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <Home></Home>
+                element: <Home></Home>,
+                children: [
+                    {
+                        path: '/category/:category',
+                        element: <AllProducts></AllProducts>
+                    }
+                ]
+
             },
             {
                 path: '/statistics',

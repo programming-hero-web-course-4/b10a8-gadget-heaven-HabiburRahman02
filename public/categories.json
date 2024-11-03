@@ -1,22 +1,27 @@
 [
     {
         "id": 101,
-        "name": "Phones"
+        "category": "Phones",
+        "slug": "phones_category"
     },
     {
         "id": 102,
-        "name": "Laptops"
+        "category": "Laptops",
+        "slug": "laptops_category"
     },
     {
         "id": 103,
-        "name": "Tablets"
+        "category": "Tablets",
+        "slug": "tablets_category"
     },
     {
         "id": 104,
-        "name": "Watches"
+        "category": "Watches",
+        "slug": "watches_category"
     },
     {
         "id": 105,
-        "name": "Headphones"
+        "category": "Headphones",
+        "slug": "headphones_category"
     }
 ]
