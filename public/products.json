@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1001,
+        "product_title": "Smartwatch Series 6",
+        "image": "https://i.ibb.co.com/4RNn0rH/watch-2.jpg",
+        "category": "Watches",
+        "price": 299.99,
+        "description": "Stay connected with the latest smartwatch featuring health tracking and notifications.",
+        "Specification": [
+            "Heart rate monitor",
+            "GPS",
+            "Water-resistant",
+            "Up to 18 hours battery life"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "id": 1002,
+        "product_title": "Fitness Tracker Watch",
+        "image": "https://i.ibb.co.com/ynqYH6B/watch-1.jpg",
+        "category": "Watches",
+        "price": 99.99,
+        "description": "A lightweight fitness tracker to monitor your daily activities and health metrics.",
+        "Specification": [
+            "Step tracking",
+            "Sleep monitoring",
+            "Water-resistant",
+            "14 days battery life"
+        ],
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "id": 1003,
+        "product_title": "Samsung Galaxy Tab S8",
+        "image": "https://i.ibb.co.com/JtqSLBs/tablet-2.jpg",
+        "category": "Tablets",
+        "price": 699.99,
+        "description": "The premium tablet with an ultra-slim design and powerful performance.",
+        "Specification": [
+            "11-inch display",
+            "Snapdragon 8 Gen 1",
+            "128GB storage",
+            "8GB RAM"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "id": 1004,
+        "product_title": "Apple iPad Air",
+        "image": "https://i.ibb.co.com/wJTjphX/tablet-1.jpg",
+        "category": "Tablets",
+        "price": 599.99,
+        "description": "Versatile tablet for work and play with advanced features.",
+        "Specification": [
+            "10.9-inch Liquid Retina display",
+            "A14 Bionic chip",
+            "64GB storage",
+            "Wi-Fi and Cellular options"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "id": 1005,
+        "product_title": "Dell XPS 13",
+        "image": "https://i.ibb.co.com/hdqv3PK/laptop-3.jpg",
+        "category": "Laptops",
+        "price": 1299.99,
+        "description": "Premium laptop with stunning display and powerful performance.",
+        "Specification": [
+            "13.4-inch InfinityEdge display",
+            "Intel Core i7",
+            "16GB RAM",
+            "512GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "id": 1006,
+        "product_title": "HP Spectre x360",
+        "image": "https://i.ibb.co.com/4mPHgjm/laptop-2.jpg",
+        "category": "Laptops",
+        "price": 1499.99,
+        "description": "Stylish 2-in-1 laptop with flexibility for any task.",
+        "Specification": [
+            "13.3-inch FHD display",
+            "Intel Core i7",
+            "16GB RAM",
+            "1TB SSD"
+        ],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "id": 1007,
+        "product_title": "Lenovo ThinkPad X1 Carbon",
+        "image": "https://i.ibb.co.com/nr4fHLf/laptop-1.webp",
+        "category": "Laptops",
+        "price": 1599.99,
+        "description": "Lightweight and durable laptop with top-tier performance.",
+        "Specification": [
+            "14-inch display",
+            "Intel Core i7",
+            "16GB RAM",
+            "512GB SSD"
+        ],
+        "availability": true,
+        "rating": 4.7
+    },
+    {
+        "id": 1008,
+        "product_title": "iPhone 13",
+        "image": "https://i.ibb.co.com/3ypGJXp/phone-3.jpg",
+        "category": "Phones",
+        "price": 799.99,
+        "description": "Powerful smartphone with a dual-camera system and vibrant display.",
+        "Specification": [
+            "6.1-inch display",
+            "A15 Bionic chip",
+            "128GB storage",
+            "Dual 12MP camera"
+        ],
+        "availability": true,
+        "rating": 4.6
+    },
+    {
+        "id": 1009,
+        "product_title": "Samsung Galaxy S21",
+        "image": "https://i.ibb.co.com/16f9jSp/phone-2.jpg",
+        "category": "Phones",
+        "price": 699.99,
+        "description": "Feature-rich smartphone with excellent camera capabilities.",
+        "Specification": [
+            "6.2-inch display",
+            "Exynos 2100",
+            "128GB storage",
+            "Triple camera setup"
+        ],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "id": 1010,
+        "product_title": "Google Pixel 6",
+        "image": "https://i.ibb.co.com/yY6byfB/phone-1.jpg",
+        "category": "Phones",
+        "price": 599.99,
+        "description": "Smartphone with Google's AI and great camera features.",
+        "Specification": [
+            "6.4-inch display",
+            "Google Tensor chip",
+            "128GB storage",
+            "Dual 50MP + 12MP camera"
+        ],
+        "availability": true,
+        "rating": 4.7
+    }
+]
