@@ -4,15 +4,20 @@ import Product from "./Product";
 import { useParams } from "react-router-dom";
 
 const AllProducts = () => {
-    const { products, setProducts } = useContext(ProductContext);
+    const { products } = useContext(ProductContext);
     const { category } = useParams();
     const [newProducts, setNewProducts] = useState([]);
     console.log(category);
 
 
     useEffect(() => {
-        const filterByCategory = [...products].filter(pd => pd.category === category)
-        setNewProducts(filterByCategory)
+        if (category) {
+            const filterByCategory = [...products].filter(pd => pd.category === category)
+            setNewProducts(filterByCategory)
+        }
+        else {
+            setNewProducts(products.slice(0, 6))
+        }
     }, [category, products])
 
 
