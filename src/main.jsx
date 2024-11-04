@@ -7,7 +7,7 @@ import ProductProvider from './provider/ProductProvider.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div className='bg-[#F7F7F7] mx-2 md:px-0'>
+    <div className='bg-[#F7F7F7] px-2 md:px-0'>
       <ProductProvider>
         <RouterProvider router={router} />
       </ProductProvider>
