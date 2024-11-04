@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-import AllProducts from "../AllProducts/AllProducts";
 import LeftSideNav from "../Home/LeftSideNav/LeftSideNav";
 
 const HomeContainer = () => {
