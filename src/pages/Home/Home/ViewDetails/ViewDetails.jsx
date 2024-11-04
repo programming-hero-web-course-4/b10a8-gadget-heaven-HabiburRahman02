@@ -1,7 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { ProductContext } from '../../../../provider/ProductProvider';
 import ReactStars from "react-rating-stars-component";
+import { FaCartPlus, FaRegHeart } from 'react-icons/fa';
 
 const ViewDetails = () => {
     const { products } = useContext(ProductContext);
@@ -15,11 +16,11 @@ const ViewDetails = () => {
 
     const { product_title, image, price, description, specification, availability, rating } = newProduct || {};
     console.log('rating', rating);
-    console.log(newProduct);
+    console.log('newProduct', newProduct);
 
     return (
         <div>
-            <div className="md:flex gap-8 bg-white rounded-2xl md:p-8">
+            <div className="md:flex gap-8 bg-white rounded-2xl shadow-xl p-4 md:p-8">
                 <div className='md:w-1/3'>
                     <img
                         className='rounded-xl md:h-[500px] object-cover w-full'
@@ -56,6 +57,13 @@ const ViewDetails = () => {
                                 activeColor="purple"
                                 color={'green'}
                             />
+                        </div>
+                        <div className='flex gap-4 items-center'>
+                            <Link className="bg-[#9538E2] border-2 transition-all text-white font-semibold rounded-full px-6 py-2 flex items-center gap-2">
+                                <button >Add To Cart</button>
+                                <FaCartPlus></FaCartPlus>
+                            </Link>
+                            <button className='p-2 border-2 rounded-full hover:bg-[#9538E2] hover:text-white transition-all'> <FaRegHeart className="h-5 w-5"></FaRegHeart></button>
                         </div>
                     </div>
 
