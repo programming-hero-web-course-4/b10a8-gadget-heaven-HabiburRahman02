@@ -4,6 +4,7 @@ import { ProductContext } from '../../../../provider/ProductProvider';
 import ReactStars from "react-rating-stars-component";
 import { FaCartPlus, FaRegHeart } from 'react-icons/fa';
 import TopBanner from '../../../Sharred/TopBanner/TopBanner';
+import { toast } from 'react-toastify';
 
 const ViewDetails = () => {
     const { products, carts, setCarts, lists, setLists } = useContext(ProductContext);
@@ -19,11 +20,25 @@ const ViewDetails = () => {
 
 
     const handleAddToCart = item => {
-        setCarts([...carts, item])
+        const isExist = carts.find(cart => cart.id === item.id);
+        if (isExist) {
+            return toast.error('Add to cart this item already')
+        }
+        else {
+            setCarts([...carts, item])
+            toast.success('Hurray added this item in cart')
+        }
     }
 
     const handleWishList = item => {
-        setLists([...lists, item])
+        const isExist = lists.find(list => list.id === item.id);
+        if (isExist) {
+            return toast.error('This Item added wishlist already')
+        }
+        else {
+            setLists([...lists, item])
+            toast.success('Hurray added this item in wishlist')
+        }
     }
     return (
         <div className='relative mb-96'>

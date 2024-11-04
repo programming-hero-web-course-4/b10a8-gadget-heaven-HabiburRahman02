@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { ProductContext } from "../../../../provider/ProductProvider";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 const LeftSideNav = () => {

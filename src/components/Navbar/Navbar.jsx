@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { ProductContext } from "../../provider/ProductProvider";
 
 const Navbar = () => {
-    const { carts } = useContext(ProductContext);
+    const { carts, lists } = useContext(ProductContext);
     const links = <>
         <NavLink className={({ isActive }) => `font-semibold text-base mr-6 ${isActive && 'text-red-600'}`} to='/'>Home</NavLink>
         <NavLink className={({ isActive }) => `font-semibold text-base mr-6 ${isActive && 'text-red-600'}`} to='/statistics'>Statistics</NavLink>
@@ -69,7 +69,7 @@ const Navbar = () => {
                             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
                                 <div className="indicator">
                                     <FaRegHeart className="h-5 w-5"></FaRegHeart>
-                                    {/* <span className="badge badge-sm indicator-item">8</span> */}
+                                    <span className="badge badge-sm indicator-item">{lists.length}</span>
                                 </div>
                             </div>
                         </div>
