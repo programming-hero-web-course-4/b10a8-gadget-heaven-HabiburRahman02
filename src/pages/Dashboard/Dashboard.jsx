@@ -14,10 +14,10 @@ const Dashboard = () => {
                     <TabList className={' bg-[#9538E2] pb-12'}>
                         <div className="flex gap-2 max-w-[300px] mx-auto">
                             <Tab>
-                                <button className="mt-8 bg-white text-black font-semibold rounded-full px-12 py-3 hover:bg-base-200">Cart</button>
+                                <button className=" bg-white text-black font-semibold rounded-full px-12 py-3 hover:bg-base-200">Cart</button>
                             </Tab>
                             <Tab>
-                                <button className="mt-8 border-white text-white hover:text-black border-2 font-semibold rounded-full px-12 py-3 hover:bg-base-200">Wishlist</button>
+                                <button className=" border-white text-white hover:text-black border-2 font-semibold rounded-full px-12 py-3 hover:bg-base-200">Wishlist</button>
                             </Tab>
                         </div>
                     </TabList>

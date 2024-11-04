@@ -6,6 +6,7 @@ import Statistics from "../pages/Statistics/Statistics";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import AllProducts from "../pages/Home/AllProducts/AllProducts";
 import ViewDetails from "../pages/Home/Home/ViewDetails/ViewDetails";
+import Feedback from "../pages/Feedback/Feedback";
 
 const router = createBrowserRouter([
     {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
             {
                 path: '/statistics',
                 element: <Statistics></Statistics>
+            },
+            {
+                path: '/feedback',
+                element: <Feedback></Feedback>
             },
             {
                 path: '/dashboard',

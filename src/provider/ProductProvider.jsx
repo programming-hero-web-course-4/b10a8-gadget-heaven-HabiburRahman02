@@ -6,8 +6,8 @@ const ProductProvider = ({ children }) => {
     const [products, setProducts] = useState([]);
     const [carts, setCarts] = useState([]);
     const [lists, setLists] = useState([]);
+    const [feedback, setFeedback] = useState([]);
 
-    console.log('lists', lists);
     useEffect(() => {
         fetch('/categories.json')
             .then(res => res.json())
@@ -20,6 +20,12 @@ const ProductProvider = ({ children }) => {
             .then(data => setProducts(data))
     }, [])
 
+    useEffect(() => {
+        fetch('/feedback.json')
+            .then(res => res.json())
+            .then(data => setFeedback(data))
+    }, [])
+
 
     const productInfo = {
         categories,
@@ -27,7 +33,8 @@ const ProductProvider = ({ children }) => {
         carts,
         setCarts,
         lists,
-        setLists
+        setLists,
+        feedback
     }
 
     return (

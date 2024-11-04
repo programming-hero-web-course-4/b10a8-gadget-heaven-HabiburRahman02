@@ -9,6 +9,7 @@ const Navbar = () => {
         <NavLink className={({ isActive }) => `font-semibold text-base mr-6 ${isActive && 'text-red-600'}`} to='/'>Home</NavLink>
         <NavLink className={({ isActive }) => `font-semibold text-base mr-6 ${isActive && 'text-red-600'}`} to='/statistics'>Statistics</NavLink>
         <NavLink className={({ isActive }) => `font-semibold text-base mr-6 ${isActive && 'text-red-600'}`} to='/dashboard'>Dashboard</NavLink>
+        <NavLink className={({ isActive }) => `font-semibold text-base mr-6 ${isActive && 'text-red-600'}`} to='/feedback'>Feedback</NavLink>
     </>
     return (
         <div>
