@@ -4,10 +4,9 @@ import { ProductContext } from '../../../../provider/ProductProvider';
 import ReactStars from "react-rating-stars-component";
 import { FaCartPlus, FaRegHeart } from 'react-icons/fa';
 import TopBanner from '../../../Sharred/TopBanner/TopBanner';
-import { FaCarTunnel } from 'react-icons/fa6';
 
 const ViewDetails = () => {
-    const { products, cart, setCart } = useContext(ProductContext);
+    const { products, carts, setCarts } = useContext(ProductContext);
     const { id } = useParams();
     const [newProduct, setNewProduct] = useState({});
 
@@ -20,7 +19,7 @@ const ViewDetails = () => {
 
 
     const handleAddToCart = item => {
-        setCart([...cart, item])
+        setCarts([...carts, item])
     }
 
     return (
