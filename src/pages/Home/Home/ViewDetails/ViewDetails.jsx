@@ -4,9 +4,10 @@ import { ProductContext } from '../../../../provider/ProductProvider';
 import ReactStars from "react-rating-stars-component";
 import { FaCartPlus, FaRegHeart } from 'react-icons/fa';
 import TopBanner from '../../../Sharred/TopBanner/TopBanner';
+import { FaCarTunnel } from 'react-icons/fa6';
 
 const ViewDetails = () => {
-    const { products } = useContext(ProductContext);
+    const { products, cart, setCart } = useContext(ProductContext);
     const { id } = useParams();
     const [newProduct, setNewProduct] = useState({});
 
@@ -16,8 +17,11 @@ const ViewDetails = () => {
     }, [id, products])
 
     const { product_title, image, price, description, specification, availability, rating } = newProduct || {};
-    console.log('rating', rating);
-    console.log('newProduct', newProduct);
+
+
+    const handleAddToCart = item => {
+        setCart([...cart, item])
+    }
 
     return (
         <div className='relative mb-96'>
@@ -67,10 +71,10 @@ const ViewDetails = () => {
                                     />
                                 </div>
                                 <div className='flex gap-4 items-center'>
-                                    <Link className="bg-[#9538E2] border-2 transition-all text-white font-semibold rounded-full px-6 py-2 flex items-center gap-2">
+                                    <div onClick={() => handleAddToCart(newProduct)} className="bg-[#9538E2] border-2 transition-all text-white font-semibold rounded-full px-6 py-2 flex items-center gap-2">
                                         <button >Add To Cart</button>
                                         <FaCartPlus></FaCartPlus>
-                                    </Link>
+                                    </div>
                                     <button className='p-2 border-2 rounded-full hover:bg-[#9538E2] hover:text-white transition-all'> <FaRegHeart className="h-5 w-5"></FaRegHeart></button>
                                 </div>
                             </div>

@@ -1,11 +1,11 @@
-
 import { createContext, useEffect, useState } from "react";
 
 export const ProductContext = createContext(null)
 const ProductProvider = ({ children }) => {
     const [categories, setCategories] = useState([]);
     const [products, setProducts] = useState([]);
-
+    const [cart, setCart] = useState([]);
+    console.log('cart', cart);
     useEffect(() => {
         fetch('/categories.json')
             .then(res => res.json())
@@ -22,7 +22,8 @@ const ProductProvider = ({ children }) => {
     const productInfo = {
         categories,
         products,
-        setProducts
+        cart,
+        setCart,
     }
 
     return (
