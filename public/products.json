@@ -6,14 +6,14 @@
         "category": "Watches",
         "price": 299.99,
         "description": "Stay connected with the latest smartwatch featuring health tracking and notifications.",
-        "Specification": [
+        "specification": [
             "Heart rate monitor",
             "GPS",
             "Water-resistant",
             "Up to 18 hours battery life"
         ],
-        "availability": true,
-        "rating": 4.6
+        "availability": false,
+        "rating": 4
     },
     {
         "id": 102,
@@ -22,14 +22,14 @@
         "category": "Watches",
         "price": 99.99,
         "description": "A lightweight fitness tracker to monitor your daily activities and health metrics.",
-        "Specification": [
+        "specification": [
             "Step tracking",
             "Sleep monitoring",
             "Water-resistant",
             "14 days battery life"
         ],
         "availability": true,
-        "rating": 4.4
+        "rating": 4
     },
     {
         "id": 103,
@@ -38,14 +38,14 @@
         "category": "Tablets",
         "price": 699.99,
         "description": "The premium tablet with an ultra-slim design and powerful performance.",
-        "Specification": [
+        "specification": [
             "11-inch display",
             "Snapdragon 8 Gen 1",
             "128GB storage",
             "8GB RAM"
         ],
         "availability": true,
-        "rating": 4.7
+        "rating": 5
     },
     {
         "id": 104,
@@ -54,14 +54,14 @@
         "category": "Tablets",
         "price": 599.99,
         "description": "Versatile tablet for work and play with advanced features.",
-        "Specification": [
+        "specification": [
             "10.9-inch Liquid Retina display",
             "A14 Bionic chip",
             "64GB storage",
             "Wi-Fi and Cellular options"
         ],
         "availability": true,
-        "rating": 4.8
+        "rating": 5
     },
     {
         "id": 105,
@@ -70,14 +70,14 @@
         "category": "Laptops",
         "price": 1299.99,
         "description": "Premium laptop with stunning display and powerful performance.",
-        "Specification": [
+        "specification": [
             "13.4-inch InfinityEdge display",
             "Intel Core i7",
             "16GB RAM",
             "512GB SSD"
         ],
         "availability": true,
-        "rating": 4.9
+        "rating": 4
     },
     {
         "id": 106,
@@ -86,14 +86,14 @@
         "category": "Laptops",
         "price": 1499.99,
         "description": "Stylish 2-in-1 laptop with flexibility for any task.",
-        "Specification": [
+        "specification": [
             "13.3-inch FHD display",
             "Intel Core i7",
             "16GB RAM",
             "1TB SSD"
         ],
         "availability": true,
-        "rating": 4.8
+        "rating": 4
     },
     {
         "id": 107,
@@ -102,14 +102,14 @@
         "category": "Laptops",
         "price": 1599.99,
         "description": "Lightweight and durable laptop with top-tier performance.",
-        "Specification": [
+        "specification": [
             "14-inch display",
             "Intel Core i7",
             "16GB RAM",
             "512GB SSD"
         ],
         "availability": true,
-        "rating": 4.7
+        "rating": 4
     },
     {
         "id": 108,
@@ -118,14 +118,14 @@
         "category": "Phones",
         "price": 799.99,
         "description": "Powerful smartphone with a dual-camera system and vibrant display.",
-        "Specification": [
+        "specification": [
             "6.1-inch display",
             "A15 Bionic chip",
             "128GB storage",
             "Dual 12MP camera"
         ],
         "availability": true,
-        "rating": 4.6
+        "rating": 3
     },
     {
         "id": 109,
@@ -134,14 +134,14 @@
         "category": "Phones",
         "price": 699.99,
         "description": "Feature-rich smartphone with excellent camera capabilities.",
-        "Specification": [
+        "specification": [
             "6.2-inch display",
             "Exynos 2100",
             "128GB storage",
             "Triple camera setup"
         ],
         "availability": true,
-        "rating": 4.5
+        "rating": 3
     },
     {
         "id": 110,
@@ -150,13 +150,13 @@
         "category": "Phones",
         "price": 599.99,
         "description": "Smartphone with Google's AI and great camera features.",
-        "Specification": [
+        "specification": [
             "6.4-inch display",
             "Google Tensor chip",
             "128GB storage",
             "Dual 50MP + 12MP camera"
         ],
         "availability": true,
-        "rating": 4.7
+        "rating": 5
     }
 ]

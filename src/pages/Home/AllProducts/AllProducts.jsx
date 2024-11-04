@@ -7,7 +7,6 @@ const AllProducts = () => {
     const { products } = useContext(ProductContext);
     const { category } = useParams();
     const [newProducts, setNewProducts] = useState([]);
-    console.log(category);
 
 
     useEffect(() => {
@@ -26,7 +25,7 @@ const AllProducts = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
             {
-                newProducts.length ? newProducts.map(product => <Product key={product.id} product={product}></Product>)
+                newProducts?.length ? newProducts.map(product => <Product key={product.id} product={product}></Product>)
                     : <h2 className="text-3xl text-[#9538E2] font-semibold">No Data Found</h2>
             }
         </div>

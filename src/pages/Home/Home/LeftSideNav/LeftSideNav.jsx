@@ -10,7 +10,7 @@ const LeftSideNav = () => {
             <div className="bg-white p-6 rounded-xl shadow-xl  space-y-4">
                 {
                     categories.map(category => <div key={category.id}>
-                        <NavLink className={({ isActive }) => ` ${isActive && 'text-red-500 '}`} to={`/category/${category.category}`}>
+                        <NavLink className={({ isActive }) => ` ${isActive && 'text-[#a538ff] '}`} to={`/category/${category.category}`}>
                             <button className="bg-base-200 w-full hover:bg-[#9538E2] hover:text-white font-semibold rounded-full px-6 py-3">{category.category}</button>
                         </NavLink>
                     </div>)
