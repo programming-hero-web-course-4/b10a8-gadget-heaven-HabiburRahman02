@@ -6,7 +6,7 @@ import { FaCartPlus, FaRegHeart } from 'react-icons/fa';
 import TopBanner from '../../../Sharred/TopBanner/TopBanner';
 
 const ViewDetails = () => {
-    const { products, carts, setCarts } = useContext(ProductContext);
+    const { products, carts, setCarts, lists, setLists } = useContext(ProductContext);
     const { id } = useParams();
     const [newProduct, setNewProduct] = useState({});
 
@@ -22,6 +22,9 @@ const ViewDetails = () => {
         setCarts([...carts, item])
     }
 
+    const handleWishList = item => {
+        setLists([...lists, item])
+    }
     return (
         <div className='relative mb-96'>
             <div className='pb-24'>
@@ -74,7 +77,9 @@ const ViewDetails = () => {
                                         <button >Add To Cart</button>
                                         <FaCartPlus></FaCartPlus>
                                     </div>
-                                    <button className='p-2 border-2 rounded-full hover:bg-[#9538E2] hover:text-white transition-all'> <FaRegHeart className="h-5 w-5"></FaRegHeart></button>
+                                    <button
+                                        onClick={() => handleWishList(newProduct)}
+                                        className='p-2 border-2 rounded-full hover:bg-[#9538E2] hover:text-white transition-all'> <FaRegHeart className="h-5 w-5"></FaRegHeart></button>
                                 </div>
                             </div>
 

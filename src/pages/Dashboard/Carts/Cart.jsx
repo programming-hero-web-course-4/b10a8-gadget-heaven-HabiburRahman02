@@ -2,7 +2,7 @@
 const Cart = ({ cart }) => {
     const { image, product_title, description, price } = cart
     return (
-        <div className="border mx-auto">
+        <div className="border mx-auto w-2/3">
             <div className="flex gap-6 bg-white p-6 shadow-xl rounded-xl">
                 <img
                     className="w-[200px] h-[125px] rounded-xl"

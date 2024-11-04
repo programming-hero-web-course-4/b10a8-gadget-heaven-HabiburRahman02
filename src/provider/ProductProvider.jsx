@@ -5,7 +5,9 @@ const ProductProvider = ({ children }) => {
     const [categories, setCategories] = useState([]);
     const [products, setProducts] = useState([]);
     const [carts, setCarts] = useState([]);
-    console.log('cart', carts);
+    const [lists, setLists] = useState([]);
+
+    console.log('lists', lists);
     useEffect(() => {
         fetch('/categories.json')
             .then(res => res.json())
@@ -24,6 +26,8 @@ const ProductProvider = ({ children }) => {
         products,
         carts,
         setCarts,
+        lists,
+        setLists
     }
 
     return (
