@@ -10,6 +10,8 @@ const ViewDetails = () => {
     const { products, carts, setCarts, lists, setLists } = useContext(ProductContext);
     const { id } = useParams();
     const [newProduct, setNewProduct] = useState({});
+    const [isAddToCart, setIsAddToCart] = useState(false);
+    const [isAddToList, setIsAddToList] = useState(false);
 
     useEffect(() => {
         const findById = products.find(pd => pd.id === parseInt(id))
@@ -22,10 +24,11 @@ const ViewDetails = () => {
     const handleAddToCart = item => {
         const isExist = carts.find(cart => cart.id === item.id);
         if (isExist) {
-            return toast.error('Add to cart this item already')
+            // return toast.error('Add to cart this item already')
         }
         else {
             setCarts([...carts, item])
+            setIsAddToCart(true)
             toast.success('Hurray added this item in cart')
         }
     }
@@ -33,10 +36,11 @@ const ViewDetails = () => {
     const handleWishList = item => {
         const isExist = lists.find(list => list.id === item.id);
         if (isExist) {
-            return toast.error('This Item added wishlist already')
+            // return toast.error('This Item added wishlist already')
         }
         else {
             setLists([...lists, item])
+            setIsAddToList(true);
             toast.success('Hurray added this item in wishlist')
         }
     }
@@ -88,13 +92,16 @@ const ViewDetails = () => {
                                     />
                                 </div>
                                 <div className='flex gap-4 items-center'>
-                                    <div onClick={() => handleAddToCart(newProduct)} className="bg-[#9538E2] border-2 transition-all text-white font-semibold rounded-full px-6 py-2 flex items-center gap-2">
-                                        <button >Add To Cart</button>
+                                    <div onClick={() => handleAddToCart(newProduct)} disabled={isAddToCart}
+                                        className={`bg-[#9538E2] border-2 transition-all text-white font-semibold rounded-full px-6 py-2 flex items-center gap-2 ${isAddToCart && 'cursor-not-allowed bg-green-500'}`}>
+                                        <button
+                                        >{isAddToCart ? 'Cart Added Already' : 'Add To Cart'}</button>
                                         <FaCartPlus></FaCartPlus>
                                     </div>
                                     <button
                                         onClick={() => handleWishList(newProduct)}
-                                        className='p-2 border-2 rounded-full hover:bg-[#9538E2] hover:text-white transition-all'> <FaRegHeart className="h-5 w-5"></FaRegHeart></button>
+                                        disabled={isAddToList}
+                                        className={`p-2 border-2 rounded-full hover:bg-[#9538E2] hover:text-white transition-all ${isAddToList && 'bg-[#9538E2] text-white cursor-not-allowed'}`}> <FaRegHeart className="h-5 w-5"></FaRegHeart></button>
                                 </div>
                             </div>
 
