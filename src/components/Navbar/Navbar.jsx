@@ -9,10 +9,10 @@ const Navbar = () => {
     const navStyle = location.pathname === '/';
 
     const links = <>
-        <NavLink className={({ isActive }) => `font-semibold text-base mr-6 ${isActive && navStyle && 'text-yellow-300'}`} to='/'>Home</NavLink>
-        <NavLink className={({ isActive }) => `font-semibold text-base mr-6 ${isActive && 'text-red-600'}`} to='/statistics'>Statistics</NavLink>
-        <NavLink className={({ isActive }) => `font-semibold text-base mr-6 ${isActive && 'text-red-600'}`} to='/dashboard'>Dashboard</NavLink>
-        <NavLink className={({ isActive }) => `font-semibold text-base mr-6 ${isActive && 'text-red-600'}`} to='/feedback'>Feedback</NavLink>
+        <NavLink className={({ isActive }) => `font-semibold text-base mr-6 ${isActive && navStyle && 'text-yellow-400 border-b-2 border-yellow-400'}`} to='/'>Home</NavLink>
+        <NavLink className={({ isActive }) => `font-semibold text-base mr-6 ${isActive && 'text-[#9538E2] border-b-2 border-[#9538E2]'}`} to='/statistics'>Statistics</NavLink>
+        <NavLink className={({ isActive }) => `font-semibold text-base mr-6 ${isActive && 'text-[#9538E2] border-b-2 border-[#9538E2]'}`} to='/dashboard'>Dashboard</NavLink>
+        <NavLink className={({ isActive }) => `font-semibold text-base mr-6 ${isActive && 'text-[#9538E2] border-b-2 border-[#9538E2]'}`} to='/feedback'>Feedback</NavLink>
     </>
     return (
         <div className="fixed z-50 w-full ">
