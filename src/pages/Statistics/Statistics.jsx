@@ -1,7 +1,7 @@
 
 const Statistics = () => {
     return (
-        <div>
+        <div className="max-w-[1400px] mx-auto">
             Statistics
         </div>
     );

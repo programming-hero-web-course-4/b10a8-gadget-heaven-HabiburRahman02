@@ -115,7 +115,7 @@
         "id": 108,
         "product_title": "iPhone 13",
         "image": "https://i.ibb.co.com/3ypGJXp/phone-3.jpg",
-        "category": "Phones",
+        "category": "AllProducts",
         "price": 799.99,
         "description": "Powerful smartphone with a dual-camera system and vibrant display.",
         "specification": [
@@ -131,7 +131,7 @@
         "id": 109,
         "product_title": "Samsung Galaxy S21",
         "image": "https://i.ibb.co.com/16f9jSp/phone-2.jpg",
-        "category": "Phones",
+        "category": "AllProducts",
         "price": 699.99,
         "description": "Feature-rich smartphone with excellent camera capabilities.",
         "specification": [
@@ -147,7 +147,7 @@
         "id": 110,
         "product_title": "Google Pixel 6",
         "image": "https://i.ibb.co.com/yY6byfB/phone-1.jpg",
-        "category": "Phones",
+        "category": "AllProducts",
         "price": 599.99,
         "description": "Smartphone with Google's AI and great camera features.",
         "specification": [
@@ -158,5 +158,53 @@
         ],
         "availability": true,
         "rating": 5
+    },
+    {
+        "id": 111,
+        "product_title": "Wireless Bluetooth Earbuds",
+        "image": "https://i.ibb.co.com/FXNqWq8/head-3.jpg",
+        "category": "AllProducts",
+        "price": 129.99,
+        "description": "Premium wireless earbuds with long battery life and great sound.",
+        "specification": [
+            "Bluetooth 5.0",
+            "Touch controls",
+            "24-hour battery life",
+            "Water-resistant"
+        ],
+        "availability": true,
+        "rating": 5
+    },
+    {
+        "id": 112,
+        "product_title": "Over-Ear Headphones",
+        "image": "https://i.ibb.co.com/rZ7tGN3/head-2.jpg",
+        "category": "AllProducts",
+        "price": 149.99,
+        "description": "Comfortable over-ear headphones with immersive sound quality.",
+        "specification": [
+            "Noise-cancelling",
+            "40-hour battery life",
+            "Foldable design",
+            "Hi-Res audio"
+        ],
+        "availability": true,
+        "rating": 4
+    },
+    {
+        "id": 113,
+        "product_title": "Sports Earbuds",
+        "image": "https://i.ibb.co.com/WKMKkff/head-1.jpg",
+        "category": "AllProducts",
+        "price": 59.99,
+        "description": "Durable and sweat-proof earbuds for active use.",
+        "specification": [
+            "Secure fit",
+            "Sweat-resistant",
+            "Up to 8 hours battery life",
+            "Quick charging"
+        ],
+        "availability": true,
+        "rating": 4
     }
 ]
