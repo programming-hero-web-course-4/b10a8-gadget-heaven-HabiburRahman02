@@ -72,12 +72,14 @@ const Navbar = () => {
                             </div>
                         </Link>
                         <div className="dropdown dropdown-end">
-                            <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
-                                <div className="indicator">
-                                    <FaRegHeart className="h-5 w-5"></FaRegHeart>
-                                    <span className="badge badge-sm indicator-item">{lists.length}</span>
+                            <Link to='/dashboard'>
+                                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+                                    <div className="indicator">
+                                        <FaRegHeart className="h-5 w-5"></FaRegHeart>
+                                        <span className="badge badge-sm indicator-item">{lists.length}</span>
+                                    </div>
                                 </div>
-                            </div>
+                            </Link>
                         </div>
                     </div>
                     {/*  */}

@@ -1,17 +1,31 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { ProductContext } from "../../../provider/ProductProvider";
 import Cart from "./Cart";
 import { LiaUtensilsSolid } from "react-icons/lia";
+import Swal from "sweetalert2";
+import modalImg from '../../../assets/Group.png'
 
 const Carts = () => {
     const { carts, setCarts } = useContext(ProductContext);
     const totalCost = carts.reduce((total, item) => total + item.price, 0);
+    const [isDisabled, setIsDisabled] = useState(false)
 
     const sortByPrice = type => {
         if (type === 'price') {
             const sort = [...carts].sort((a, b) => b.price - a.price);
             setCarts(sort)
         }
+    }
+
+    const handlePurchase = () => {
+        // console.log('purchase');
+        setIsDisabled(true)
+        setCarts([])
+        Swal.fire({
+            imageUrl: `${modalImg}`,
+            title: "Payment Successfully",
+            text: "Thanks for purchasing!"
+        });
     }
 
     return (
@@ -26,8 +40,10 @@ const Carts = () => {
                         <LiaUtensilsSolid></LiaUtensilsSolid>
                     </button>
                     <button
-                        className="font-semibold rounded-full px-12 py-3 border-2 border-[#9538E2] text-white bg-[#9538E2] transition-all  hover:text-white"
-                    >Purchase
+                        disabled={isDisabled}
+                        onClick={handlePurchase}
+                        className={`font-semibold rounded-full px-12 py-3 border-2 border-[#9538E2] text-white bg-[#9538E2] transition-all  hover:text-white ${isDisabled && 'cursor-not-allowed'}`}
+                    >{isDisabled ? 'Purchase Already' : 'Purchase'}
 
                     </button>
                 </div>
