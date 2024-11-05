@@ -8,7 +8,7 @@ const List = ({ list }) => {
             <div className="md:flex justify-between gap-6 bg-white p-6 shadow-xl w-full rounded-xl">
                 <div className="md:flex gap-6">
                     <img
-                        className="md:w-[200px] w-full md:h-full mb-4 md:mb-0 h-[200px] object-cover rounded-xl"
+                        className="md:w-[200px] w-full md:h-[125px] mb-4 md:mb-0 h-[200px] object-cover rounded-xl"
                         src={image} alt="" />
                     <div className="space-y-4">
                         <h2 className="text-2xl font-semibold">{product_title}</h2>
