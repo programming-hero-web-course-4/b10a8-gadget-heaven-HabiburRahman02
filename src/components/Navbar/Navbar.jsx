@@ -15,8 +15,8 @@ const Navbar = () => {
         <NavLink className={({ isActive }) => `font-semibold text-base mr-6 ${isActive && 'text-red-600'}`} to='/feedback'>Feedback</NavLink>
     </>
     return (
-        <div className="fixed z-50 w-full backdrop-blur-3xl">
-            <div className={`navbar max-w-[1400px] rounded-t-3xl mx-auto ${navStyle && 'bg-[#9538E2] text-white'}`}>
+        <div className="fixed z-50 w-full ">
+            <div className={`navbar max-w-[1400px] backdrop-blur-3xl rounded-t-3xl mx-auto ${navStyle && 'bg-[#9538E2] text-white'}`}>
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

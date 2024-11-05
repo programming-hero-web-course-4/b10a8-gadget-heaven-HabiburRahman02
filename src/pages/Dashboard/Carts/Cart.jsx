@@ -1,6 +1,16 @@
+import { useContext } from "react";
 import { RxCrossCircled } from "react-icons/rx";
+import { ProductContext } from "../../../provider/ProductProvider";
 const Cart = ({ cart }) => {
-    const { image, product_title, description, price } = cart
+    const { image, product_title, description, price } = cart;
+    const { carts, setCarts } = useContext(ProductContext);
+
+    const handleDeleteCartItem = item => {
+        const filterById = [...carts].filter(cart => cart.id !== item.id);
+        setCarts(filterById)
+        console.log(item, carts);
+    }
+
     return (
         <div className="border mx-auto md:w-2/3">
             <div className="md:flex justify-between gap-6 bg-white p-6 shadow-xl w-full rounded-xl">
@@ -15,7 +25,9 @@ const Cart = ({ cart }) => {
                     </div>
                 </div>
                 <div>
-                    <button>
+                    <button
+                        onClick={() => handleDeleteCartItem(cart)}
+                    >
                         <RxCrossCircled className="text-2xl text-red-500"></RxCrossCircled>
                     </button>
                 </div>

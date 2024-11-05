@@ -21,7 +21,6 @@ const Carts = () => {
     }
 
     const handlePurchase = () => {
-
         if (carts.length) {
             Swal.fire({
                 imageUrl: `${modalImg}`,
@@ -50,7 +49,8 @@ const Carts = () => {
                 <div className="md:flex gap-6 items-center">
                     <h2 className='text-2xl font-semibold'>Total cost: ${totalCost.toFixed(2)}</h2>
                     <button
-                        onClick={() => sortByPrice('price')} className="flex items-center gap-2 font-semibold rounded-full px-12 py-3 border-2 border-[#9538E2] text-[#9538E2] hover:bg-[#9538E2] transition-all hover:text-white">
+                        onClick={() => sortByPrice('price')}
+                        className="flex items-center gap-2 font-semibold rounded-full px-12 py-3 border-2 border-[#9538E2] text-[#9538E2] hover:bg-[#9538E2] transition-all hover:text-white">
                         Sort by Price
                         <LiaUtensilsSolid></LiaUtensilsSolid>
                     </button>
@@ -59,7 +59,6 @@ const Carts = () => {
                         onClick={handlePurchase}
                         className={`font-semibold rounded-full px-12 py-3 border-2 border-[#9538E2] text-white bg-[#9538E2] transition-all  hover:text-white ${isDisabled && 'cursor-not-allowed'}`}
                     >{isDisabled ? 'Purchase Already' : 'Purchase'}
-
                     </button>
                 </div>
             </div>

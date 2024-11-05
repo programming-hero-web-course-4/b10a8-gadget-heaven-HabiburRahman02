@@ -17,7 +17,7 @@ import { ProductContext } from "../../provider/ProductProvider";
 
 const Statistics = () => {
     const { carts } = useContext(ProductContext);
-    console.log(carts);
+
     return (
         <div className="max-w-[1400px] mx-auto mt-16">
             <Helmet>
