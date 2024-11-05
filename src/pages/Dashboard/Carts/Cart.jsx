@@ -8,7 +8,6 @@ const Cart = ({ cart }) => {
     const handleDeleteCartItem = item => {
         const filterById = [...carts].filter(cart => cart.id !== item.id);
         setCarts(filterById)
-        console.log(item, carts);
     }
 
     return (

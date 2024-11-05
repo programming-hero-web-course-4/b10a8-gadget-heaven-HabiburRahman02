@@ -1,8 +1,17 @@
+import { useContext } from "react";
 import { RxCrossCircled } from "react-icons/rx";
 import { Link } from "react-router-dom";
+import { ProductContext } from "../../../../provider/ProductProvider";
 
 const List = ({ list }) => {
-    const { image, product_title, description, price } = list
+    const { image, product_title, description, price } = list;
+    const { lists, setLists } = useContext(ProductContext);
+
+    const handleDeleteListItem = item => {
+        const filterById = [...lists].filter(list => list.id !== item.id);
+        setLists(filterById)
+    }
+
     return (
         <div className="border mx-auto md:w-2/3">
             <div className="md:flex justify-between gap-6 bg-white p-6 shadow-xl w-full rounded-xl">
@@ -20,7 +29,8 @@ const List = ({ list }) => {
                     </div>
                 </div>
                 <div>
-                    <button>
+                    <button
+                        onClick={() => handleDeleteListItem(list)}>
                         <RxCrossCircled className="text-2xl text-red-500"></RxCrossCircled>
                     </button>
                 </div>
