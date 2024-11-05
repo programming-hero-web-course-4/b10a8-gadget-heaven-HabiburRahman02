@@ -2,12 +2,17 @@ import { useContext } from "react";
 import { ProductContext } from "../../provider/ProductProvider";
 import FeedbackCard from "./FeedbackCard";
 import DashboardBanner from "../Dashboard/DashboardBanner/DashboardBanner";
+import { Helmet } from "react-helmet-async";
 
 const Feedback = () => {
     const { feedback } = useContext(ProductContext);
-    console.log(feedback);
+    // console.log(feedback);
+
     return (
         <div className="">
+            <Helmet>
+                <title>Feedback | Gadget Heaven</title>
+            </Helmet>
             <DashboardBanner
                 title={'Users Feedback'}
                 subTitle='Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!'

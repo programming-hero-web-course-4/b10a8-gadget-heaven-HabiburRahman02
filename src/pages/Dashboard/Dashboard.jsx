@@ -3,9 +3,13 @@ import DashboardBanner from "./DashboardBanner/DashboardBanner";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 // import 'react-tabs/style/react-tabs.css';
 import Lists from "./DashboardBanner/Lists/Lists";
+import { Helmet } from "react-helmet-async";
 const Dashboard = () => {
     return (
         <div>
+            <Helmet>
+                <title>Dashboard | Gadget Heaven</title>
+            </Helmet>
             <DashboardBanner title='Dashboard Details'
                 subTitle='Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!'
             ></DashboardBanner>

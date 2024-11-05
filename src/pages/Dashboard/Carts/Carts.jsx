@@ -4,11 +4,14 @@ import Cart from "./Cart";
 import { LiaUtensilsSolid } from "react-icons/lia";
 import Swal from "sweetalert2";
 import modalImg from '../../../assets/Group.png'
+import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const Carts = () => {
     const { carts, setCarts } = useContext(ProductContext);
     const totalCost = carts.reduce((total, item) => total + item.price, 0);
     const [isDisabled, setIsDisabled] = useState(false)
+    const navigate = useNavigate();
 
     const sortByPrice = type => {
         if (type === 'price') {
@@ -18,14 +21,26 @@ const Carts = () => {
     }
 
     const handlePurchase = () => {
-        // console.log('purchase');
-        setIsDisabled(true)
-        setCarts([])
-        Swal.fire({
-            imageUrl: `${modalImg}`,
-            title: "Payment Successfully",
-            text: "Thanks for purchasing!"
-        });
+
+        if (carts.length) {
+            Swal.fire({
+                imageUrl: `${modalImg}`,
+                title: "Payment Successfully",
+                text: "Thanks for purchasing!",
+                text: `Toal Cost: ${totalCost}`
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    setCarts([])
+                    setIsDisabled(true)
+                    navigate('/')
+                }
+            });
+
+        }
+        else {
+            toast.error('products cart is empty')
+        }
+
     }
 
     return (
