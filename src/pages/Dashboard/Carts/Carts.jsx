@@ -38,7 +38,7 @@ const Carts = () => {
 
         }
         else {
-            toast.error('products cart is empty')
+            toast.error('Products cart is an empty')
         }
 
     }
