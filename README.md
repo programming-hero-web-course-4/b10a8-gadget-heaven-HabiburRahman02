@@ -2,6 +2,7 @@
 ##### https://a8-gadget.netlify.app
 
 ### 2. Attach Requirement Document Link
+##### https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/main/Batch-10_Assignment-08-.pdf
 
 ### 3. List of React Fundamental concepts used in the project
 ##### I have tried to use many React concepts in this project, such as components, JSX, props, state, hooks, context API, conditional rendering, events, side effect handling, and NavLink, among others.

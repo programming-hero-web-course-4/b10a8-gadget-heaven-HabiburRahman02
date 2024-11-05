@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 const LeftSideNav = () => {
     const { categories } = useContext(ProductContext);
-    console.log(categories);
+    // console.log(categories);
     return (
         <div>
             <div className="bg-white p-6 rounded-xl shadow-xl  space-y-4">
