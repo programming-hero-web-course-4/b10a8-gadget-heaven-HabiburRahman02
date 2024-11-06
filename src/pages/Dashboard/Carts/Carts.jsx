@@ -26,7 +26,7 @@ const Carts = () => {
                 imageUrl: `${modalImg}`,
                 title: "Payment Successfully",
                 text: "Thanks for purchasing!",
-                text: `Toal Cost: ${totalCost}`
+                text: `Toal Cost: ${totalCost.toFixed(2)}`
             }).then((result) => {
                 if (result.isConfirmed) {
                     setCarts([])
